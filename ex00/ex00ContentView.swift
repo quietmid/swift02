@@ -21,10 +21,27 @@ struct ex00ContentView: View {
                     Text("Currently")
                         .font(.largeTitle)
                         .padding()
-//                    Spacer()
-                    Text(savedSearchedText)
-                        .font(.largeTitle)
-                        .padding()
+                    // Spacer()
+                    if !locationManager.coordinatesText.isEmpty {
+                        Text(locationManager.coordinatesText)
+                            .font(.headline)
+                            .foregroundColor(.blue)
+                            .padding()
+                    }
+                    
+                    if let error = locationManager.locationError {
+                        Text(error)
+                            .font(.caption)
+                            .foregroundColor(.red)
+                            .multilineTextAlignment(.center)
+                            .padding()
+                    }
+                    
+                    if !savedSearchedText.isEmpty {
+                        Text(savedSearchedText)
+                            .font(.title2)
+                            .padding()
+                    }
                 }
                 .tag(0)
                 
@@ -33,9 +50,26 @@ struct ex00ContentView: View {
                         .font(.largeTitle)
                         .padding()
 //                    Spacer()
-                    Text(savedSearchedText)
-                        .font(.largeTitle)
-                        .padding()
+                    if !locationManager.coordinatesText.isEmpty {
+                        Text(locationManager.coordinatesText)
+                            .font(.headline)
+                            .foregroundColor(.blue)
+                            .padding()
+                    }
+                    
+                    if let error = locationManager.locationError {
+                        Text(error)
+                            .font(.caption)
+                            .foregroundColor(.red)
+                            .multilineTextAlignment(.center)
+                            .padding()
+                    }
+                    
+                    if !savedSearchedText.isEmpty {
+                        Text(savedSearchedText)
+                            .font(.title2)
+                            .padding()
+                    }
                 }
                 .tag(1)
                 
@@ -44,9 +78,26 @@ struct ex00ContentView: View {
                         .font(.largeTitle)
                         .padding()
 //                    Spacer()
-                    Text(savedSearchedText)
-                        .font(.largeTitle)
-                        .padding()
+                    if !locationManager.coordinatesText.isEmpty {
+                        Text(locationManager.coordinatesText)
+                            .font(.headline)
+                            .foregroundColor(.blue)
+                            .padding()
+                    }
+                    
+                    if let error = locationManager.locationError {
+                        Text(error)
+                            .font(.caption)
+                            .foregroundColor(.red)
+                            .multilineTextAlignment(.center)
+                            .padding()
+                    }
+                    
+                    if !savedSearchedText.isEmpty {
+                        Text(savedSearchedText)
+                            .font(.title2)
+                            .padding()
+                    }
                 }
                 .tag(2)
             }
