@@ -6,8 +6,15 @@
 	objectVersion = 77;
 	objects = {
 
+/* Begin PBXBuildFile section */
+		1E35CA0B2E67324900977984 /* ex00ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E35CA0A2E67324900977984 /* ex00ContentView.swift */; };
+		1E9EC6832E72CAA20023EDA2 /* LocationManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E9EC6822E72CA9B0023EDA2 /* LocationManager.swift */; };
+/* End PBXBuildFile section */
+
 /* Begin PBXFileReference section */
 		1E35C9FB2E67321500977984 /* Module02.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Module02.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		1E35CA0A2E67324900977984 /* ex00ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ex00ContentView.swift; sourceTree = "<group>"; };
+		1E9EC6822E72CA9B0023EDA2 /* LocationManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationManager.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFileSystemSynchronizedRootGroup section */
@@ -32,6 +39,7 @@
 		1E35C9F22E67321500977984 = {
 			isa = PBXGroup;
 			children = (
+				1E35CA092E67322900977984 /* ex00 */,
 				1E35C9FD2E67321500977984 /* Module02 */,
 				1E35C9FC2E67321500977984 /* Products */,
 			);
@@ -43,6 +51,15 @@
 				1E35C9FB2E67321500977984 /* Module02.app */,
 			);
 			name = Products;
+			sourceTree = "<group>";
+		};
+		1E35CA092E67322900977984 /* ex00 */ = {
+			isa = PBXGroup;
+			children = (
+				1E9EC6822E72CA9B0023EDA2 /* LocationManager.swift */,
+				1E35CA0A2E67324900977984 /* ex00ContentView.swift */,
+			);
+			path = ex00;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -119,6 +136,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1E9EC6832E72CAA20023EDA2 /* LocationManager.swift in Sources */,
+				1E35CA0B2E67324900977984 /* ex00ContentView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -256,6 +275,7 @@
 				DEVELOPMENT_TEAM = 68RS42GQ45;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSLocationWhenInUseUsageDescription = "This App uses your lcoation to display weather for your area";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -284,6 +304,7 @@
 				DEVELOPMENT_TEAM = 68RS42GQ45;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSLocationWhenInUseUsageDescription = "This App uses your lcoation to display weather for your area";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
