@@ -5,8 +5,8 @@
 //  Created by Joseph Lu on 9/11/25.
 //
 
-import Foundation
-import CoreLocation
+import Foundation //for NSObject, DispatchQueue and stringFormating
+import CoreLocation //CLLocationManager, CLLocation and etc
 
 class LocationManager: NSObject, ObservableObject, CLLocationManagerDelegate {
     private let manager = CLLocationManager()
